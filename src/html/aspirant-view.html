@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Bienvenido Bisonte - SII</title>
+</head>
+<body>
+    <header class="headerContainer">
+        <div class="centeredContainer">
+            <h1 class="title">Control de Aspirantes</h1>            
+            <p class="subtitle">TecNM Campus Chihuahua II</p>
+        </div>
+    </header>
+    <main class="mainContainer">
+        <img src="../assets/img/logoTec.png" alt="Logo TecNM" id="logoTec">
+        <div class="welcomeContainer">
+            <h2 class="welcome-message">
+                ¡Bienvenido a la casa de los bisontes!            
+            </h2>
+            <p> 
+                Para formar parte de la comunidad bisonte, ingresa y verifica todos los datos que se piden a continuación
+            </p>
+        </div>
+        <div class="pendientAspirantsTable">
+            <h3>Datos generales del aspirante</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Apellido paterno</th>
+                        <th>Apellido materno</th>
+                        <th>Nombres</th>
+                        <th>CURP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Ingrese su apellido paterno"></td>
+                        <td><input type="text" placeholder="Ingrese su apellido materno"></td>
+                        <td><input type="text" placeholder="Ingrese su nombre"></td>
+                        <td><input type="text" placeholder="Ingrese su CURP"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th>Fecha de nacimiento</th>
+                        <th>Sexo</th>
+                        <th>Nacionalidad</th>
+                        <th>Entidad de nacimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="date"></td>
+                        <td><input type="" placeholder="Ingrese su CURP"></td>
+                        <td>
+                            <select>
+                                <option value="M">Masculino</option>
+                                <option value="F">Femenino</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="M">Chihuahua</option>
+                                <option value="M">Queretaro</option>
+                                <option value="M">Nuevo Leon</option>
+                                <option value="F">Sonora</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="4">Carrera</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4">
+                            <select>
+                                <option value="I.S.C">Ing. en sistemas computacionales</option>
+                                <option value="informatica">Ing. informática</option>
+                                <option value="Diseño industrial">Ing. en diseño industrial</option>
+                                <option value="Ing. industrial">Ing. industrial</option>
+                                <option value="Gestion empresarial">Ing. en gestión empresarial</option>
+                                <option value="Arquitectura">Licenciatura en arquitectura</option>
+                                <option value="Admon. empresas">Licenciatura en administración de empresas</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="4">Acta de nacimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="center">
+                        <td colspan="4"><input type="file" placeholder="Nombre de la preparatoria"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pendientAspirantsTable">
+            <h3>Domicilio actual</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th>Municipio</th>
+                        <th>Código postal</th>
+                        <th>Colonia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="M">Chihuahua</option>
+                                <option value="M">Queretaro</option>
+                                <option value="M">Nuevo Leon</option>
+                                <option value="F">Sonora</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Ingrese el municipio"></td>
+                        <td><input type="number" placeholder="Ingrese su nombre"></td>
+                        <td><input type="text" placeholder="Ingrese su colonia"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="3">Calle</th>
+                        <th>Número</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="Ingrese la calle"></td>
+                        <td><input type="number" placeholder="Número de calle"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="2">Correo electrónico</th>
+                        <th>Teléfono celular</th>
+                        <th>Teléfono fijo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2"><input type="email" placeholder="Ingrese su correo electrónico"></td>
+                        <td><input type="number" placeholder="Número de teléfono"></td>
+                        <td><input type="number" placeholder="Teléfono de casa"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pendientAspirantsTable">
+            <h3>Preparatoria de procedencia</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Entidad de la preparatoria</th>
+                        <th colspan="2">Municipio de la preparatoria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2"><input type="text" placeholder="Ingrese la entidad de la escuela"></td>
+                        <td colspan="2"><input type="text" placeholder="Ingrese el municipio de la escuela"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="2">Escuela</th>
+                        <th>Año de egreso</th>
+                        <th>Promedio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2"><input type="text" placeholder="Nombre de la preparatoria"></td>
+                        <td><input type="number" placeholder="Año de egreso de la preparatoria"></td>
+                        <td><input type="number" placeholder="Promedio general"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>

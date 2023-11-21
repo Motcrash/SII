@@ -1,0 +1,11 @@
+td input{
+    margin: 5px 0px;
+    width: 75%;
+    text-align: center;
+}
+td select{
+    margin: 5px 5px;
+}
+.center{
+    height: 50px;
+}

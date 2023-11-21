@@ -1,0 +1,111 @@
+html{
+    font-family: sans-serif !important;
+}
+* {
+    margin:0;
+}
+.headerContainer{
+    width: 100%;
+    height: 50%;
+    background-color: #1b396a;
+}
+.centeredContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+.title{
+    color: white;
+}
+.subtitle{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #b0935f;
+}
+.mainContainer{
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer img#logoTec{
+    width: 35%;
+    position: absolute;
+    opacity: 0.3;
+}
+.mainContainer img#userLogo{
+    z-index: 5;
+    margin-bottom: 20px;
+}
+.loginForm{
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 24%;
+}
+.loginForm p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.loginForm input{
+    border-radius: 5px;
+}
+.loginForm button{
+    margin-top: 15px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #455a7c;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    width: 20%;
+    height: 2rem;
+}
+.welcome-message{
+    font-weight: bold;
+    color: #b51500;
+    text-align: center;
+}
+.welcomeContainer p{
+    margin-top: 10px;
+}
+.pendientAspirantsTable{
+    z-index: 5;
+    margin-top: 10px;
+    padding: 3px;
+}
+.pendientAspirantsTable table, th,tr,td{
+    border: 1.5px solid #000000;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+.navbar{
+    padding:1.5rem;
+    background-color: #29569e;
+    width: 100%;
+}
+.navbar * a{
+    color: white;
+}
+
+.pendientAspirantsTable th{
+    background-color: #455a7c;
+    color: #f3f3f3;
+    padding: 6px 16px;
+}
+.pendientAspirantsTable h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
