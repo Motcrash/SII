@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,14 @@
     <link rel="stylesheet" href="../styles/main.css">
     <title>Vista administrativa - SII</title>
 </head>
+
 <body>
     <header class="headerContainer">
         <div class="centeredContainer">
-            <h1 class="title">Comprobación de datos del aspirante</h1>            
+            <h1 class="title">Comprobación de datos del aspirante</h1>
             <p class="subtitle">TecNM Campus Chihuahua II</p>
         </div>
     </header>
-    <nav class="navbar">
-        
-    </nav>
     <main class="mainContainer">
         <img src="../assets/img/logoTec.png" alt="Logo TecNM" id="logoTec">
         <div class="welcomeContainer">
@@ -41,10 +40,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input type="text" placeholder="Ingrese su apellido paterno"></td>
-                        <td><input type="text" placeholder="Ingrese su apellido materno"></td>
-                        <td><input type="text" placeholder="Ingrese su nombre"></td>
-                        <td><input type="text" placeholder="Ingrese su CURP"></td>
+                        <td><input disabled type="text" placeholder="Ingrese su apellido paterno"></td>
+                        <td><input disabled type="text" placeholder="Ingrese su apellido materno"></td>
+                        <td><input disabled type="text" placeholder="Ingrese su nombre"></td>
+                        <td><input disabled type="text" placeholder="Ingrese su CURP"></td>
                     </tr>
                 </tbody>
                 <thead>
@@ -57,16 +56,16 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input type="date"></td>
-                        <td><input type="" placeholder="Ingrese su CURP"></td>
+                        <td><input disabled type="date"></td>
+                        <td><input disabled type="" placeholder="Ingrese su CURP"></td>
                         <td>
-                            <select>
+                            <select disabled>
                                 <option value="M">Masculino</option>
                                 <option value="F">Femenino</option>
                             </select>
                         </td>
                         <td>
-                            <select>
+                            <select disabled>
                                 <option value="M">Chihuahua</option>
                                 <option value="M">Queretaro</option>
                                 <option value="M">Nuevo Leon</option>
@@ -83,7 +82,7 @@
                 <tbody>
                     <tr>
                         <td colspan="4">
-                            <select>
+                            <select disabled>
                                 <option value="I.S.C">Ing. en sistemas computacionales</option>
                                 <option value="informatica">Ing. informática</option>
                                 <option value="Diseño industrial">Ing. en diseño industrial</option>
@@ -93,6 +92,16 @@
                                 <option value="Admon. empresas">Licenciatura en administración de empresas</option>
                             </select>
                         </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="4">Acta de nacimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="center">
+                        <td colspan="4">Sin archivos subidos por el aspirante</td>
                     </tr>
                 </tbody>
             </table>
@@ -113,16 +122,16 @@
                 <tbody>
                     <tr>
                         <td>
-                            <select>
+                            <select disabled>
                                 <option value="M">Chihuahua</option>
                                 <option value="M">Queretaro</option>
                                 <option value="M">Nuevo Leon</option>
                                 <option value="F">Sonora</option>
                             </select>
                         </td>
-                        <td><input type="text" placeholder="Ingrese el municipio"></td>
-                        <td><input type="number" placeholder="Ingrese su nombre"></td>
-                        <td><input type="text" placeholder="Ingrese su colonia"></td>
+                        <td><input disabled type="text" placeholder="Ingrese el municipio"></td>
+                        <td><input disabled type="number" placeholder="Ingrese su nombre"></td>
+                        <td><input disabled type="text" placeholder="Ingrese su colonia"></td>
                     </tr>
                 </tbody>
                 <thead>
@@ -133,8 +142,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="3"><input type="text" placeholder="Ingrese la calle"></td>
-                        <td><input type="number" placeholder="Número de calle"></td>
+                        <td colspan="3"><input disabled type="text" placeholder="Ingrese la calle"></td>
+                        <td><input disabled type="number" placeholder="Número de calle"></td>
                     </tr>
                 </tbody>
                 <thead>
@@ -146,9 +155,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="2"><input type="email" placeholder="Ingrese su correo electrónico"></td>
-                        <td><input type="number" placeholder="Número de teléfono"></td>
-                        <td><input type="number" placeholder="Teléfono de casa"></td>
+                        <td colspan="2"><input disabled type="email" placeholder="Ingrese su correo electrónico"></td>
+                        <td><input disabled type="number" placeholder="Número de teléfono"></td>
+                        <td><input disabled type="number" placeholder="Teléfono de casa"></td>
                     </tr>
                 </tbody>
             </table>
@@ -166,8 +175,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="2"><input type="text" placeholder="Ingrese la entidad de la escuela"></td>
-                        <td colspan="2"><input type="text" placeholder="Ingrese el municipio de la escuela"></td>
+                        <td colspan="2"><input disabled type="text" placeholder="Ingrese la entidad de la escuela"></td>
+                        <td colspan="2"><input disabled type="text" placeholder="Ingrese el municipio de la escuela"></td>
                     </tr>
                 </tbody>
                 <thead>
@@ -179,22 +188,27 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="2"><input type="text" placeholder="Nombre de la preparatoria"></td>
-                        <td><input type="number" placeholder="Año de egreso de la preparatoria"></td>
-                        <td><input type="number" placeholder="Promedio general"></td>
+                        <td colspan="2"><input disabled type="text" placeholder="Nombre de la preparatoria"></td>
+                        <td><input disabled type="number" placeholder="Año de egreso de la preparatoria"></td>
+                        <td><input disabled type="number" placeholder="Promedio general"></td>
                     </tr>
                 </tbody>
-                <thead>
-                    <tr>
-                        <th colspan="4">Acta de nacimiento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="center">
-                        <td colspan="4"><input type="file" placeholder="Nombre de la preparatoria"></td>
-                    </tr>
-                </tbody>
+                
             </table>
         </div>
+        <div>
+
+            <label for="aspiranteValido">El aspirante cumple con los requisitos.</label>
+            <input type="checkbox" name="aspiranteValido" id="aspiranteValido">
+        </div>
+        <div>
+            <a href="./admin-view.html">
+                <input type="button" value="Aceptar estudiante" style="background-color: #455a7c; color: white; border: 0; padding: 10px;">
+            </a>
+            <a href="./admin-view.html">
+                <input type="button" value="Rechazar estudiante" style="background-color: #455a7c; color: white; border: 0; padding: 10px;">
+            </a>
+        </div>
+
     </main>
 </body>
