@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/adminStyles.css">
+    <link rel="stylesheet" href="../styles/acceptedStyles.css">
     <title>Vista administrativa - SII</title>
 </head>
 <body>
     <header class="headerContainer">
         <div class="centeredContainer">
-            <h1 class="title">Control de Aspirantes</h1>            
+            <h1 class="title">Aspirantes aprobados</h1>            
             <p class="subtitle">TecNM Campus Chihuahua II</p>
         </div>
     </header>
@@ -24,20 +24,14 @@
         </a>
     </nav>
     <main>
-       <div class="adminElements">
+        <div class="acceptedElements">
             <div class="welcomeContainer">
-                <h2 class="welcome-message">
-                    ¡Bienvenido al control de aspirantes!            
-                </h2>
-                <p>
-                    El dia de hoy tienes un total de 0 aspirantes a comprobar documentación.
-                </p>
-
-                <div class="centeredContainer">
-                    <a href="accepted-view.html">
-                        <input type="button" value="Ver aceptados" class="button">
-                    </a>
-                </div>
+                <p>Los siguientes aspirantes están siendo procesados por control escolar</p>
+            </div>
+            <div class="centeredContainer">
+                <a href="admin-view.html">
+                    <input type="button" value="Volver" class="button">
+                </a>
             </div>
             <div class="pendientAspirantsTable">
                 <table>
@@ -64,6 +58,6 @@
                 </table>
 
             </div>
-       </div>
+        </div>
     </main>
 </body>

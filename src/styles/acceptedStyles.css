@@ -1,0 +1,31 @@
+body, html{
+    height: 100%;
+}
+.acceptedElements{
+    margin-top: 10px;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.pendientAspirantsTable{
+    z-index: 5;
+    margin-top: 10px;
+    padding: 3px;
+}
+.pendientAspirantsTable table, th,tr,td{
+    border: 1.5px solid #000000;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+.pendientAspirantsTable th{
+    background-color: #455a7c;
+    color: #f3f3f3;
+    padding: 6px 16px;
+}
+.pendientAspirantsTable h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
