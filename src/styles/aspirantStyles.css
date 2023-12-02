@@ -1,11 +1,4 @@
-html{
-    font-family: sans-serif !important;
-}
-* {
-    margin:0;
-}
 .aspirantElements{
-    margin-top: 10px;
     display: flex;
     flex: 1;
     width: 100%;
@@ -53,25 +46,6 @@ html{
     /* margin-bottom: 5px; */
     font-weight: 400;
     font-style: italic;
-}
-.welcome-message{
-    font-weight: bold;
-    color: #b51500;
-    text-align: center;
-}
-.welcomeContainer p{
-    margin-top: 10px;
-}
-a{
-    text-decoration: none;
-}
-td input{
-    margin: 5px 0px;
-    width: 75%;
-    text-align: center;
-}
-td select{
-    margin: 5px 5px;
 }
 .center{
     height: 50px;

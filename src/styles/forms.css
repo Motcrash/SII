@@ -1,11 +1,92 @@
-td input{
-    margin: 5px 0px;
-    width: 75%;
+.pendientAspirantsTable{
+    margin-top: 10px;
+    padding: 3px;
+}
+td{
+    padding: 5px;
+}
+.pendientAspirantsTable table, th,tr,td{
     text-align: center;
+    border-collapse: collapse;
 }
-td select{
-    margin: 5px 5px;
+.pendientAspirantsTable th{
+    background-color: #455a7c;
+    color: #f3f3f3;
+    padding: 6px 16px;
 }
-.center{
-    height: 50px;
+.pendientAspirantsTable h3{
+    text-align: center;
+    margin-bottom: 10px;
+}    
+.table{
+    margin-top: 10px;
+    padding: 3px;
+}
+.table table, th,tr,td{
+    text-align: center;
+    border-collapse: collapse;
+}
+.table th{
+    background-color: #455a7c;
+    color: #f3f3f3;
+    padding: 6px 16px;
+}
+.table h3{
+    text-align: center;
+    margin-bottom: 10px;
+} 
+    /* For mobile phones: */
+@media( max-width: 500px ){
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+    }
+    td{
+        padding: 0px;
+        width: 100%;
+        height: 50px;
+    }
+    .table th{
+        
+    }
+    .pendientAspirantsTable th, .pendientAspirantsTable table{
+        border: 0px solid white;
+    }
+    .pendientAspirantsTable select{
+        width: 70%;
+    }
+    .pendientAspirantsTable table{
+        width: 100%;
+    }
+    .pendientAspirantsTable thead, .pendientAspirantsTable th{
+        display: none;
+    }
+    .pendientAspirantsTable, .pendientAspirantsTable tbody, .pendientAspirantsTable tr, .pendientAspirantsTable td{
+        display: block;
+        width: 100%;
+    }
+    .pendientAspirantsTable tr{
+        margin-bottom: 15px;
+    }
+    .pendientAspirantsTable td{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 30%;
+        padding-right: 10px;
+    }
+    .pendientAspirantsTable td::before{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 30%;
+        left: 0;
+        margin: 10px;
+        content: attr(title-label);
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
 }

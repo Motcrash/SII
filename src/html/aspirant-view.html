@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/aspirantStyles.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <link rel="stylesheet" href="../styles/aspirantStyles.css">
     <title>Bienvenido Bisonte - SII</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
                     Para formar parte de la comunidad bisonte, ingresa y verifica todos los datos que se piden a continuación
                 </p>
             </div>
-            <div class="pendientAspirantsTable">
+            <div class="pendientAspirantsTable">  
                 <h3>Datos generales del aspirante</h3>
     
                 <table>
@@ -46,10 +47,10 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input type="text" placeholder="Ingrese su apellido paterno"></td>
-                            <td><input type="text" placeholder="Ingrese su apellido materno"></td>
-                            <td><input type="text" placeholder="Ingrese su nombre"></td>
-                            <td><input type="text" placeholder="Ingrese su CURP"></td>
+                            <td title-label="Apellido paterno"><input type="text" placeholder="Ingrese su apellido paterno"></td>
+                            <td title-label="Apellido materno"><input type="text" placeholder="Ingrese su apellido materno"></td>
+                            <td title-label="Nombre"><input type="text" placeholder="Ingrese su nombre"></td>
+                            <td title-label="Curp"><input type="text" placeholder="Ingrese su CURP"></td>
                         </tr>
                     </tbody>
                     <thead>
@@ -62,16 +63,18 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input type="date"></td>
-                            <td>
+                            <td title-label="Fecha de nacimiento"><input type="date"></td>
+                            <td title-label="Sexo">
                                 <select>
+                                    <option value="" selected disabled hidden>Seleccione una opción</option>
                                     <option value="M">Masculino</option>
                                     <option value="F">Femenino</option>
                                 </select>
                             </td>
-                            <td><input type="" placeholder="Indique su Nacionalidad"></td>
-                            <td>
+                            <td title-label="Nacionalidad"><input type="" placeholder="Indique su Nacionalidad"></td>
+                            <td title-label="Entidad de nacimiento">
                                 <select>
+                                    <option value="" selected disabled hidden>Seleccione una entidad</option>
                                     <option value="M">Chihuahua</option>
                                     <option value="M">Queretaro</option>
                                     <option value="M">Nuevo Leon</option>
@@ -87,8 +90,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td colspan="4">
+                            <td title-label="Carrera" colspan="4">
                                 <select>
+                                    <option value="" disabled selected hidden>Seleccione una carrera</option>
                                     <option value="I.S.C">Ing. en sistemas computacionales</option>
                                     <option value="informatica">Ing. informática</option>
                                     <option value="Diseño industrial">Ing. en diseño industrial</option>
@@ -107,7 +111,7 @@
                     </thead>
                     <tbody>
                         <tr class="center">
-                            <td colspan="4"><input type="file" id="fileInput"></td>
+                            <td title-label="Acta de nacimineto" colspan="4"><input type="file" id="fileInput"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -127,17 +131,18 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
+                            <td title-label="Estado">
                                 <select>
+                                    <option value="" selected disabled hidden>Seleccione un estado</option>
                                     <option value="M">Chihuahua</option>
                                     <option value="M">Queretaro</option>
                                     <option value="M">Nuevo Leon</option>
                                     <option value="F">Sonora</option>
                                 </select>
                             </td>
-                            <td><input type="text" placeholder="Ingrese el municipio"></td>
-                            <td><input type="number" placeholder="Ingrese su nombre"></td>
-                            <td><input type="text" placeholder="Ingrese su colonia"></td>
+                            <td title-label="Municipio"><input type="text" placeholder="Ingrese el municipio"></td>
+                            <td title-label="Código postal"><input type="number" placeholder="Ingrese su código postal"></td>
+                            <td title-label="Colonia"><input type="text" placeholder="Ingrese su colonia"></td>
                         </tr>
                     </tbody>
                     <thead>
@@ -148,8 +153,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td colspan="3"><input type="text" placeholder="Ingrese la calle"></td>
-                            <td><input type="number" placeholder="Número de calle"></td>
+                            <td title-label="Calle" colspan="3"><input type="text" placeholder="Ingrese la calle de domicilio"></td>
+                            <td title-label="Número"><input type="number" placeholder="Número de calle"></td>
                         </tr>
                     </tbody>
                     <thead>
@@ -161,9 +166,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td colspan="2"><input type="email" placeholder="Ingrese su correo electrónico"></td>
-                            <td><input type="number" placeholder="Número de teléfono"></td>
-                            <td><input type="number" placeholder="Teléfono de casa"></td>
+                            <td title-label="Email" colspan="2"><input type="email" placeholder="Ingrese su correo electrónico"></td>
+                            <td title-label="Núm. celular"><input type="number" placeholder="Número de teléfono"></td>
+                            <td title-label="Núm. casa"><input type="number" placeholder="Teléfono de casa"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -181,8 +186,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td colspan="2"><input type="text" placeholder="Ingrese la entidad de la escuela"></td>
-                            <td colspan="2"><input type="text" placeholder="Ingrese el municipio de la escuela"></td>
+                            <td title-label="Entidad prepa" colspan="2"><input type="text" placeholder="Ingrese la entidad de la escuela"></td>
+                            <td title-label="Municipio prepa" colspan="2"><input type="text" placeholder="Ingrese el municipio de la escuela"></td>
                         </tr>
                     </tbody>
                     <thead>
@@ -194,16 +199,16 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td colspan="2"><input type="text" placeholder="Nombre de la preparatoria"></td>
-                            <td><input type="number" placeholder="Año de egreso de la preparatoria"></td>
-                            <td><input type="number" placeholder="Promedio general"></td>
+                            <td title-label="Nombre de la escuela" colspan="2"><input type="text" placeholder="Nombre de la preparatoria"></td>
+                            <td title-label="Año de egreso"><input type="number" placeholder="Año de egreso de la preparatoria"></td>
+                            <td title-label="Promedio general"><input type="number" placeholder="Promedio general"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="submitButton">
                 <a href="../../index.html">
-                    <input type="button" value="Enviar datos" style="background-color: #455a7c; color: white; border: 0; padding: 10px;">
+                    <input type="button" value="Enviar datos" class="button">
                 </a>
             </div>
         </div>

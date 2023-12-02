@@ -5,7 +5,6 @@ body, html{
     margin-bottom: 20px;
 }
 .loginForm{
-    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +25,10 @@ body, html{
     font-size: medium;
     width: 20%;
     height: 2rem;
+}
+.loginForm > h3{
+    text-align: center;
+    width: 120px;
 }
 #tecLink{
     margin-top: 50px;
