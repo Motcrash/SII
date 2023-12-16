@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/forms.css">
     <link rel="stylesheet" href="../styles/acceptedStyles.css">
+    <script src="../js/main.js"></script>
     <title>Vista administrativa - SII</title>
 </head>
 <body>
@@ -42,23 +43,16 @@
                             <th>Nombre completo</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="user-validate.html">21550001</a></td>
-                            <td>Mauricio Macias</td>
-                        </tr>
-                        <tr>
-                            <td><a href="user-validate.html">21550002</a></td>
-                            <td>Pau Castellano</td>
-                        </tr>
-                        <tr>
-                            <td><a href="user-validate.html">21550003</a></td>
-                            <td>Marcial Prats</td>
-                        </tr>
+                    <tbody id="approvedAspirants">                   
                     </tbody>
                 </table>
 
             </div>
         </div>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fillApprovedAspirantsTable();
+            })
+    </script>
 </body>

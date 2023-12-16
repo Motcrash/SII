@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,14 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/forms.css">
     <link rel="stylesheet" href="../styles/adminStyles.css">
+    <script src="../js/main.js"></script>
     <title>Vista administrativa - SII</title>
 </head>
+
 <body>
     <header class="headerContainer">
         <div class="centeredContainer">
-            <h1 class="title">Control de Aspirantes</h1>            
+            <h1 class="title">Control de Aspirantes</h1>
             <p class="subtitle">TecNM Campus Chihuahua II</p>
         </div>
     </header>
@@ -25,13 +28,12 @@
         </a>
     </nav>
     <main>
-       <div class="adminElements">
+        <div class="adminElements">
             <div class="welcomeContainer">
                 <h2 class="welcome-message">
-                    ¡Bienvenido al control de aspirantes!            
+                    ¡Bienvenido al control de aspirantes!
                 </h2>
-                <p>
-                    El dia de hoy tienes un total de 0 aspirantes a comprobar documentación.
+                <p id="numAspirantes">                    
                 </p>
 
                 <div class="centeredContainer">
@@ -48,23 +50,17 @@
                             <th>Nombre completo</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="user-validate.html">21550001</a></td>
-                            <td>Mauricio Macias</td>
-                        </tr>
-                        <tr>
-                            <td><a href="user-validate.html">21550002</a></td>
-                            <td>Pau Castellano</td>
-                        </tr>
-                        <tr>
-                            <td><a href="user-validate.html">21550003</a></td>
-                            <td>Marcial Prats</td>
-                        </tr>
+                    <tbody id="aspirantesPendientes">                        
                     </tbody>
                 </table>
 
             </div>
-       </div>
+        </div>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            fillPendientAspirantsTable();
+        });
+    </script>
 </body>

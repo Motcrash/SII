@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/main.css">
     <link rel="stylesheet" href="/src/styles/indexStyles.css">
+    <script src="/src/js/login.js"></script>
     <title>SII</title>
 </head>
 <body>
@@ -20,16 +21,14 @@
             <div class="loginForm">
                 <h3>Inicie sesión</h3>
                 <p>Usuario</p>
-                <input type="text" placeholder="Ingrese el usuario">
+                <input type="text" id="username" placeholder="Ingrese el usuario">
                 <p>Contraseña</p>
-                <input type="password" placeholder="Ingrese su contraseña">
+                <input type="password" id="password" placeholder="Ingrese su contraseña">
+                
 
-                <a href="./src/html/admin-view.html">
-                    <input type="button" value="Administrador" class="button">
-                </a>
-                <a href="./src/html/aspirant-view.html">
-                    <input type="button" value="Aspirante" class="button">
-                </a>
+                <a id="iniciarSesion">
+                    <input type="button" value="Iniciar sesion" class="button">
+                </a>             
             </div>
 
             <p id="tecLink">Recuerda consultar los pasos para inscribirte en la página del <a target="_blank" href="https://www.chihuahua2.tecnm.mx/admision/convocatorias-de-nuevo-ingreso-a-licenciatura/">Tecnológico de Chihuahua II</a></p>
